@@ -1,0 +1,56 @@
+body {
+    margin: 0%;
+    cursor: crosshair;
+}
+
+#info_text.hit {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-weight: bold;
+    color: darkorange;
+}
+
+#info_text.miss {
+    position: fixed;
+    top: 25%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 50px;
+    font-weight: bold;
+    color: red;
+}
+
+#info_screen {
+    position: fixed;
+    right: 0%;
+    bottom: 0%;
+    width: 350px;
+    height: 350px;
+    padding: 10px;
+    border: 2px solid;
+}
+
+#total_score, #last_score, #arrows_left, #version {
+    font-size: 40px;
+    color: cadetblue;
+}
+
+#new_game_button {
+    font-size: 30px;
+    padding: 10px;
+    background-color: cadetblue;
+    color: black;
+    cursor: pointer;
+}
+
+#new_game_button:disabled,
+#new_game_button[disabled] {
+    font-size: 30px;
+    padding: 10px;
+    background-color: cadetblue;
+    color: gray;
+    cursor: not-allowed;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Archery Simulator</title>
+    <link rel="stylesheet" href="./style.css">
+    <script type="importmap">
+        {
+            "imports": {
+                "three": "https://cdn.jsdelivr.net/npm/three@0.180.0/build/three.module.js",
+                "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.180.0/examples/jsm/",
+                "cannon-es": "https://cdn.jsdelivr.net/npm/cannon-es@0.20.0/dist/cannon-es.min.js",
+                "cannon-es-debugger": "https://cdn.jsdelivr.net/npm/cannon-es-debugger@1.0.0/dist/cannon-es-debugger.min.js"
+            }
+        }
+    </script>
+</head>
+<body>
+    <canvas id="target_board_viewer" style="left: 0%; bottom: 0%; border: 2px solid; display: block; position: fixed;"></canvas>
+    <div id="info_text" class="hit"></div>
+    <div id="info_screen">
+        <div id="total_score">Total Score: 0</div>
+        <div id="last_score">Last Score: 0</div>
+        <div id="arrows_left">Arrows Left: 10 / 10</div>
+        <br>
+        <div><button id="new_game_button" disabled="true">New Game</button></div>
+        <br><br>
+        <div id="version">Version: 1.0</div>
+    </div>
+    <script type="module" src="./main.js"></script>
+</body>
+</html>
